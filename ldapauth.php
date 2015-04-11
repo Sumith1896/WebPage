@@ -1,7 +1,5 @@
 <?php
-	$ldap_id = '';
-	$ldap_password = '';
-
+function ldap_auth($ldap_id, $ldap_password){
 	$ds = ldap_connect("ldap.iitb.ac.in") or die("Unable to connect to LDAP server. Please try again later.");
 	if($ldap_id=='') die("You have not entered any LDAP ID. Please go back and fill it up.");
 	if($ldap_password=='') die("You have not entered any password. Please go back and fill it up.");
@@ -17,3 +15,8 @@
 	{
 		return "NONE";
 	}
+ 	
+}
+echo ldap_auth($_POST['user'],$_POST['pass']);
+?>
+
