@@ -17,6 +17,6 @@ function ldap_auth($ldap_id, $ldap_password){
 	}
  	
 }
-echo ldap_auth($_POST['user'],$_POST['pass']);
+echo ldap_auth($_GET['user'],$_GET['pass']);
 ?>
 

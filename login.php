@@ -6,7 +6,6 @@
 
     <title>Login form</title>
 
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -26,9 +25,9 @@
                         <div class="col-md-6 col-md-offset-3 well">
                             <div class="form-group">
                                 <p>LDAP Id</p>
-                                <input type="text" name="user" id="user" class="form-control" placeholder="LDAP id" tabindex="3"><br>
+                                <input type="text" name="user" placeholder="LDAP id" tabindex="3"><br>
                                 <p>Password</p>
-                                <input type="text" name="pass" id="pass" class="form-control" placeholder="Password" tabindex="3">
+                                <input type="text" name="pass" placeholder="Password" tabindex="3"><br>
                             </div>
                             <center><button class="btn btn-primary btn-lg" type="submit" name="findbtn">Authenticate</button></center>
                         </div>
